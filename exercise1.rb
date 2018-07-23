@@ -13,42 +13,97 @@ movies = {The_Neon_Demon: 2016, Bill_and_Teds_Excellent_Adventure: 1998, The_Lif
 family_ages_hash = {caitlin: 31, bear: 1, peat: 10, me: 29}
 
 
+#EX 9
+
+
+grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+p grocery_list
+grocery_list = grocery_list.sort
+grocery_list.each do |stars|
+  p "* #{stars}"
+end
+p grocery_list << "rice"
+# def forgotten_grocs(item) *******************   # Can't get this one
+#   grocery_list << forgotten_grocs(item)
+#   return grocery_list
+# end
+
+# p forgotten_grocs("rice")
+
+p grocery_list.length
+
+p grocery_list.include?("bananas")
+if grocery_list.include?("bananas") == false
+  p "You need to pick up bananas today"
+else
+  p "You have bananas already"
+end
+
+p "Don't forget your #{grocery_list[1]}"
+
+# grocery_list.each do |stars|
+#   p "* #{stars}"
+# end
+# p grocery_list.sort
+
+
+#EX 8
+
+# expenses = [1820, 3000, 1000, 400, 4400]
+# sum = 0  # must start the variable at 0!
+# expenses.each do |total|
+#   sum += total
+# end
+# p sum
+#
+# def yearly_expenses(expenses)
+#   sum = 0
+#   expenses.each do |total|
+#     sum += total
+#   end
+# return sum
+# end
+# yearly_expenses = yearly_expenses(expenses)
+# p "yearly expenses are #{yearly_expenses}"
+# miscellaneous_expenses = [30, 60, 90, 100, 256]
+# yearly_expenses = yearly_expenses(miscellaneous_expenses)
+# p "Don't forget to tell your accountant about #{yearly_expenses} in miscellaneous expenses!"
 
 #EX 7
-countries = [
-  {nation: "Morocco", continent: "Africa", climate: "Arid Desert", island: false}, {nation: "Greenland", continent: "Europe", climate: "Arctic Tundra", island: true}, {nation: "Bolivia", continent: "South America", climate: "Tropical Rainforest", island: false}
-]
-non_islands = []
-countries.each do |landlocked|
-  if landlocked[:island] == false
-    non_islands.push(landlocked[:nation])
-  end
-end
-p "#{non_islands} are not islands"
-
-numbers = Array(1..50)
-p numbers
-
-sum = 0
-numbers.each do |count|
-  sum += count
-end
-p sum
-
-numbers_repeat = []
-numbers.each do |triplets|
-  3.times {numbers_repeat.push(triplets)}
-end
-p numbers_repeat
-
-lesson = "I will not skateboard in the halls"
-20.times do
-  # lesson
-  p lesson
-end
-
-repeat_lesson = Array.new(20, lesson)
-p repeat_lesson
+# countries = [
+#   {nation: "Morocco", continent: "Africa", climate: "Arid Desert", island: false}, {nation: "Greenland", continent: "Europe", climate: "Arctic Tundra", island: true}, {nation: "Bolivia", continent: "South America", climate: "Tropical Rainforest", island: false}
+# ]
+# non_islands = []
+# countries.each do |landlocked|
+#   if landlocked[:island] == false
+#     non_islands.push(landlocked[:nation])
+#   end
+# end
+# p "#{non_islands} are not islands"
+#
+# numbers = Array(1..50)
+# p numbers
+#
+# sum = 0
+# numbers.each do |count|
+#   sum += count
+# end
+# p sum
+#
+# numbers_repeat = []
+# numbers.each do |triplets|
+#   3.times {numbers_repeat.push(triplets)}
+# end
+# p numbers_repeat
+#
+# lesson = "I will not skateboard in the halls"
+# 20.times do
+#   # lesson
+#   p lesson
+# end
+#
+# repeat_lesson = Array.new(20, lesson)
+# p repeat_lesson
 # redundant = [ 20.times do lesson]
 # p redundant
 # #EX 6
