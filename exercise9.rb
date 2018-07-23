@@ -1,3 +1,6 @@
+
+
+
 students = {
   cohort1: 34,
   cohort2: 42,
@@ -43,11 +46,12 @@ staff = {
 }
 
 
-# students.each do |cohort, v|
-#   v =* 1.05
-#   return cohort
-# end
-# p students
+
+students.each do |cohort, v|
+  v =* 1.05
+  return cohort
+end
+p students
 
 
 
