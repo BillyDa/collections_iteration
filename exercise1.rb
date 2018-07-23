@@ -15,35 +15,34 @@ family_ages_hash = {caitlin: 31, bear: 1, peat: 10, me: 29}
 
 #EX 9
 
-
-grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
-p grocery_list
-grocery_list = grocery_list.sort
-grocery_list.each do |stars|
-  p "* #{stars}"
-end
-p grocery_list << "rice"
-# def forgotten_grocs(item) *******************   # Can't get this one
-#   grocery_list << forgotten_grocs(item)
-#   return grocery_list
-# end
-
-# p forgotten_grocs("rice")
-
-p grocery_list.length
-
-p grocery_list.include?("bananas")
-if grocery_list.include?("bananas") == false
-  p "You need to pick up bananas today"
-else
-  p "You have bananas already"
-end
-
-p "Don't forget your #{grocery_list[1]}"
-
+# grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+# p grocery_list
+# grocery_list = grocery_list.sort
 # grocery_list.each do |stars|
 #   p "* #{stars}"
 # end
+# p grocery_list << "rice"
+# # def forgotten_grocs(item) *******************   # Can't get this one
+# #   grocery_list << forgotten_grocs(item)
+# #   return grocery_list
+# # end
+#
+# # p forgotten_grocs("rice")
+#
+# p grocery_list.length
+#
+# p grocery_list.include?("bananas")
+# if grocery_list.include?("bananas") == false
+#   p "You need to pick up bananas today"
+# else
+#   p "You have bananas already"
+# end
+#
+# p "Don't forget your #{grocery_list[1]}"
+#
+# # grocery_list.each do |stars|
+# #   p "* #{stars}"
+# # end
 # p grocery_list.sort
 
 
@@ -156,7 +155,7 @@ p "Don't forget your #{grocery_list[1]}"
 # cities[:toronto] = "3500000"
 # p cities
 #
-# p artists.delete_at(1)
+# p artists.delete_at(1) *********************
 # p artists
 # p artists << "Tom Waits"
 #
