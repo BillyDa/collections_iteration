@@ -14,17 +14,54 @@ family_ages_hash = {caitlin: 31, bear: 1, peat: 10, me: 29}
 
 
 
-#EX 6
+#EX 7
 countries = [
   {nation: "Morocco", continent: "Africa", climate: "Arid Desert", island: false}, {nation: "Greenland", continent: "Europe", climate: "Arctic Tundra", island: true}, {nation: "Bolivia", continent: "South America", climate: "Tropical Rainforest", island: false}
 ]
-p countries
+non_islands = []
+countries.each do |landlocked|
+  if landlocked[:island] == false
+    non_islands.push(landlocked[:nation])
+  end
+end
+p "#{non_islands} are not islands"
 
-keypad = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+numbers = Array(1..50)
+p numbers
 
-p keypad
+sum = 0
+numbers.each do |count|
+  sum += count
+end
+p sum
 
-films = {1999 => ["The Matrix", "Star Wars: Episode 1", "The Mummy"], 2009 => ["Avatar", "Star Trek", "District 9"], 2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]}
+numbers_repeat = []
+numbers.each do |triplets|
+  3.times {numbers_repeat.push(triplets)}
+end
+p numbers_repeat
+
+lesson = "I will not skateboard in the halls"
+20.times do
+  # lesson
+  p lesson
+end
+
+repeat_lesson = Array.new(20, lesson)
+p repeat_lesson
+# redundant = [ 20.times do lesson]
+# p redundant
+# #EX 6
+# countries = [
+#   {nation: "Morocco", continent: "Africa", climate: "Arid Desert", island: false}, {nation: "Greenland", continent: "Europe", climate: "Arctic Tundra", island: true}, {nation: "Bolivia", continent: "South America", climate: "Tropical Rainforest", island: false}
+# ]
+# p countries
+#
+# keypad = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+#
+# p keypad
+#
+# films = {1999 => ["The Matrix", "Star Wars: Episode 1", "The Mummy"], 2009 => ["Avatar", "Star Trek", "District 9"], 2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]}
 
 
 #EX5
